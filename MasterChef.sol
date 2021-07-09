@@ -952,7 +952,7 @@ contract BEP20 is Context, IBEP20, Ownable {
 }
 
 // KuDex with Governance.
-contract KuDex is BEP20('KuDex Token', 'KuDex') {
+contract KuDex is BEP20('KuDex Token', 'KDX') {
     /// @notice Creates `_amount` token to `_to`. Must only be called by the owner (MasterChef).
     function mint(address _to, uint256 _amount) public onlyOwner {
         _mint(_to, _amount);
